@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 2em;
+    overflow: hidden;
+
+    background-color: #787878;
+}
+
+header {
+    width: 100vw;
+    height: auto;
+    background-color: #5a5a5a;
+}
+
+header img {
+    position: relative;
+    top: 20px;
+    width: 75px;
+    height: 75px;
+}
+
+.left {
+    width: 40vw;
+    display: flex;
+    position: relative;
+    left: 1vw;
+    top: 2vh;
+    gap: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.right {
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    gap: 1vw;
+    position: relative;
+    bottom: 5.5vh;
+    right: 10vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+footer {
+    background-color: #5a5a5a;
+    width: 100vw;
+    position: relative;
+    top: 20vh;
+    height: 7.5vh;
+    display: flex;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 1vw;
+    top: 1.5vh;
+}
+
+footer p {
+    position: relative;
+    left: 3vw;
+    top: 1vh;
+    font-size: 12px;
+    color: #676666;
+}
+
+button {
+    font-family: "Pixelify Sans", sans-serif;
+    border: #5a5a5a 2px solid;
+    background-color: #5a5a5a;
+    border-radius: 4px;
+    width: 250px;
+    height: 70px;
+    color: white;
+    font-size: 50px;
+}
+
+button:hover {
+    border: #6b6b6b 2px solid;
+    background-color: #787878;
+    color: rgb(215, 215, 215);
+    cursor: pointer
+}
+
+button:active {
+    border: #525252 2px solid;
+    background-color: #525252;
+    color: #727171;
+}
+
+span {
+    color: gold;
+    -webkit-text-stroke: 2px rgb(197, 168, 1);
+}
