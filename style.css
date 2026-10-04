@@ -97,13 +97,42 @@ button {
     height: 70px;
     color: white;
     font-size: 50px;
+    position: relative;
 }
 
 button:hover {
-    border: #6b6b6b 2px solid;
-    background-color: #787878;
-    color: rgb(215, 215, 215);
+    background: transparent;
+    box-shadow: none;
     cursor: pointer
+}
+
+button::before,
+button::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 2px;
+    width: 0;
+    background: #5a5a5a;
+    box-shadow: 
+    -1px -1px 5px 0px #fff,
+    7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+}
+
+button::after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+button:hover::before,
+button:hover::after {
+    width: 100%;
+    transition: 800ms ease;
 }
 
 button:active {
